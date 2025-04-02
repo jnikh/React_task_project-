@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { logout } from '../features/auth/authSlice';
+import { logout } from '../features/auth/authslice';
 
 const Layout = () => {
   const { isAuthenticated } = useSelector((state) => state.auth);
@@ -12,10 +12,10 @@ const Layout = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Navbar */}
+     
       <nav className="bg-blue-600 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <Link to="/" className="text-xl font-bold">Redux App</Link>
+          <Link to="/" className="text-xl font-bold">Task</Link>
           <div className="flex space-x-4">
             <Link to="/" className="hover:underline">Home</Link>
             <Link to="/about" className="hover:underline">About</Link>
@@ -37,7 +37,7 @@ const Layout = () => {
 
       {/* Main content with sidebar */}
       <div className="container mx-auto flex mt-4">
-        {/* Sidebar */}
+       
         {isAuthenticated && (
           <div className="w-64 bg-white p-4 rounded shadow mr-4">
             <h2 className="text-lg font-semibold mb-4">Menu</h2>

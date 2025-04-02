@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import FormPage from './pages/FormPage';
-import DataPage from './pages/DataPage';
+import DataPage from './pages/Datapage';
 import About from './pages/About';
 import ProtectedRoute from './components/ProtectedRoute';
 
